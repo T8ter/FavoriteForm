@@ -1,0 +1,73 @@
+.container-fluid {
+  padding-top: 20px;
+}
+
+.flex-outer li,
+.flex-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 280px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.flex-outer > li > label + *{
+  flex: 1 0 220px;
+  max-width: 480px;
+}
+
+input#favColor {
+  max-width: 50px;
+}
+input#favColor + span {
+  margin-left: 10px;
+  font-size: 87%;
+}
+
+input#dob {
+  max-width: 160px;
+}
+
+input#computer {
+  max-width: 160px;
+}
+
+.button-row  {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-row button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border: 1px solid #effaff;
+  /* box-shadow: 1px 1px 4px rgba(19, 45, 66, 1.0); */
+
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.flex-inner {
+  flex-direction: row;
+  justify-content: flex-start;
+  /* min-height: 100px;
+  max-height: 100px; */
+}
+
+label {
+  font-weight: normal;
+}
